@@ -9,7 +9,7 @@ import Link from '@mui/material/Link';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 
-const Navbar = () => {
+const Navbar = ({activePage,setActivePage}) => {
   return (
     <AppBar position="static" style={{   background: '#4A2C2C', padding: '0.5rem 1rem' }}>
       <Toolbar
@@ -68,15 +68,23 @@ const Navbar = () => {
           {/* Middle Section: Navigation Links */}
           <Box display="flex" gap={3}>
             {['Home', 'About', 'Contact', 'Products', 'Blog'].map((item) => (
-              <Link
+              <Button
                 key={item}
-                href={`${item.toLowerCase()}`}
+              //  href={`${item.toLowerCase()}`}
                 underline="none"
                 color="inherit"
-                style={{ fontSize: '1rem', fontWeight: '500' }}
+                style={{ fontFamily: '"Roboto", sans-serif',
+                  fontWeight: 500,
+                  fontSize: '1rem',
+                  letterSpacing: 1,
+                  textTransform: 'capitalize',
+                  marginRight: 2, '&:hover': {
+                  cursor: 'pointer',
+                }, }}
+                onClick={() => setActivePage(`${item}`)}
               >
                 {item}
-              </Link>
+              </Button>
             ))}
           </Box>
 

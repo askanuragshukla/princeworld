@@ -8,7 +8,7 @@ import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import { motion } from 'framer-motion';
 
 
-const Services = () => {
+const Products = () => {
   
 const Background = styled(Box)({
   backgroundImage: `url('https://i.pinimg.com/originals/33/97/45/33974528aafacff2a8180c581068c877.jpg')`,
@@ -503,4 +503,4 @@ const servicesData = [
   },
 ];
 
-export default Services;
+export default Products;

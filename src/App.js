@@ -1,10 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import React,{useState} from 'react';
 import { AppBar, Toolbar, Typography, Button, Container, Grid, Card, CardMedia, CardContent, CardActions } from '@mui/material';
 import Home from './components/Home';
 import Courses from './components/Courses';
 import About from './components/About';
-import Services from './components/Services';
+import Products from './components/Products';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
@@ -13,6 +12,28 @@ import Navbar from './components/Navbar';
 
 const App = () => {
 
+  const [activePage, setActivePage] = useState('Home'); // Track the current active page
+
+  // Function to render the active page component
+  const renderPage = () => {
+    switch (activePage) {
+      case 'Home':
+        return <Home />;
+      case 'About':
+        return <About />;
+      case 'Courses':
+        return <Courses />;
+      case 'Products':
+        return <Products />;
+      case 'Contact':
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  };
+
+
+
   const theme = createTheme({
     typography: {
       fontFamily: '"Lora", serif', // Apply Lora font globally
@@ -20,10 +41,11 @@ const App = () => {
   });
 
   return (
-    <Router>
+    <>
+    {/* // <Router> */}
     
 
-<Navbar />
+<Navbar setActivePage={setActivePage} activePage={activePage}  />
 {/* <AppBar position="fixed" sx={{ background: 'linear-gradient(135deg,rgb(22, 22, 22) 0%, #1f2a44 100%)', boxShadow: 3, color: 'white' }}>
   
   <Toolbar>
@@ -82,8 +104,10 @@ const App = () => {
     </Button>
   </Toolbar>
 </AppBar> */}
+ {renderPage()}
+{/* <Home /> */}
 
-      <Routes>
+      {/* <Routes>
       
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
@@ -91,9 +115,10 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/products" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
+      </Routes> */}
       <Footer />
-    </Router>
+      </>
+   
        
 
   );
