@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/princeworld/static/css/main.4243885a.css",
+    "main.js": "/princeworld/static/js/main.183b97cb.js",
+    "static/js/488.2c8f348d.chunk.js": "/princeworld/static/js/488.2c8f348d.chunk.js",
+    "static/media/sm1.jpeg": "/princeworld/static/media/sm1.008506d78182c0e56dd3.jpeg",
+    "static/media/sm2.avif": "/princeworld/static/media/sm2.e5cf49b984fe03fe440c.avif",
+    "static/media/slick.svg": "/princeworld/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/princeworld/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/princeworld/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/princeworld/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/princeworld/index.html",
+    "main.4243885a.css.map": "/princeworld/static/css/main.4243885a.css.map",
+    "main.183b97cb.js.map": "/princeworld/static/js/main.183b97cb.js.map",
+    "488.2c8f348d.chunk.js.map": "/princeworld/static/js/488.2c8f348d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4243885a.css",
+    "static/js/main.183b97cb.js"
+  ]
+}
