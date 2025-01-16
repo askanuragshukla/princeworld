@@ -31,13 +31,13 @@ const Navbar = ({activePage,setActivePage}) => {
           <Box display="flex" alignItems="center" style={{ marginRight: '1rem' }}>
             <EmailIcon style={{ fontSize: '1rem', marginRight: '5px' }} />
             <Typography variant="body2" style={{ fontSize: '0.9rem', }}>
-              shipping@nogistic.com
+              ramsagarsharma1985@gmail.com
             </Typography>
           </Box>
           <Box display="flex" alignItems="center">
             <PhoneIcon style={{ fontSize: '1rem', marginRight: '5px' }} />
             <Typography variant="body2" style={{ fontSize: '0.9rem' }}>
-              +1 (651) 210-1954
+              +91 9920580308 | 7039712825
             </Typography>
           </Box>
         </Box>
@@ -55,13 +55,13 @@ const Navbar = ({activePage,setActivePage}) => {
         >
           {/* Left Section: Logo */}
           <Box display="flex" alignItems="center">
-            <img
+            {/* <img
               src="https://via.placeholder.com/40" // Replace with your logo
               alt="Nogistic Logo"
               style={{ marginRight: '8px' }}
-            />
+            /> */}
             <Typography variant="h6" component="div" style={{ fontWeight: 'bold' }}>
-              Nogistic
+              Prince World Exim
             </Typography>
           </Box>
 

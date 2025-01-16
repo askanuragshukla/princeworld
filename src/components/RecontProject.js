@@ -3,7 +3,8 @@ import { Box, Grid, Typography,Card } from '@mui/material';
 import { motion } from 'framer-motion';
 import sm1 from './images/sm1.jpeg'
 import sm2 from './images/sm2.avif'
-
+import interiors from './images/ionteriors.jpg'
+import civilcont from './images/Civil-Contracts.webp'
 const RecentProject = () => {
   return (
     <Box
@@ -14,7 +15,7 @@ const RecentProject = () => {
          <Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ padding: '2rem',marginTop:8,marginBottom:8 }}>
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://static.vecteezy.com/system/resources/previews/023/446/049/non_2x/construction-and-structure-concept-of-engineer-or-architect-meeting-for-project-working-with-partner-and-engineering-tools-on-model-building-and-blueprint-in-working-site-contract-for-both-companies-photo.jpg"
+      src={interiors}
       alt="Market Investment Illustration"
       style={{
         height: '100%',  // Adjust height to a smaller size
@@ -115,7 +116,7 @@ const RecentProject = () => {
             </Card>
           </Grid> */}
           <motion.img
-      src={sm1}
+      src={civilcont}
       alt="Market Investment Illustration"
       style={{
         marginTop:10,

@@ -40,16 +40,16 @@ const About = () => {
 
   const consultancyDetails = [
     {
-      title: 'Civil Contracting',
+      title: 'RSS Enterprise',
       description: 'End-to-end civil construction services for residential and commercial projects.',
     },
     {
-      title: 'Interior Design',
+      title: 'Sharmaji Interiors',
       description: 'Creative and functional interior design solutions tailored to meet client needs.',
     },
     {
-      title: 'Furniture & Hardware',
-      description: 'High-quality furniture and hardware solutions with a focus on durability.',
+      title: 'Furniture & Hardware Export',
+      description: 'High-quality furniture such as Sofas, Dining table and all type of custom furnitures.',
     },
   ];
 

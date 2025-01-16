@@ -104,7 +104,7 @@ const Contact = () => {
               <InfoRow>
                 <MailOutlineIcon />
                 <Typography variant="body1" color="text.secondary" sx={{ color: "#e0e0e0" }}>
-                  contact@globaltrade.com
+                ramsagarsharma1985@gmail.com
                 </Typography>
               </InfoRow>
               <InfoRow>
