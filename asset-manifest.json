@@ -1,28 +1,35 @@
 {
   "files": {
-    "main.css": "/princeworld/static/css/main.93ce2b33.css",
-    "main.js": "/princeworld/static/js/main.0d07c925.js",
-    "static/js/488.2c8f348d.chunk.js": "/princeworld/static/js/488.2c8f348d.chunk.js",
+    "main.css": "/princeworld/static/css/main.ba9bad04.css",
+    "main.js": "/princeworld/static/js/main.20d4c16b.js",
+    "static/js/488.7f1fec7b.chunk.js": "/princeworld/static/js/488.7f1fec7b.chunk.js",
+    "static/media/walnutlghd.png": "/princeworld/static/media/walnutlghd.119d2c8e7d90b47428fd.png",
     "static/media/DallESpicesfxf.webp": "/princeworld/static/media/DallESpicesfxf.9c75821144e8d8a0f890.webp",
+    "static/media/spicepr.jpg": "/princeworld/static/media/spicepr.4e0b0dff81a0b2fce8a5.jpg",
+    "static/media/spiceshdlg.jpg": "/princeworld/static/media/spiceshdlg.4e0b0dff81a0b2fce8a5.jpg",
     "static/media/DALLEMoongnMasoorfxf.webp": "/princeworld/static/media/DALLEMoongnMasoorfxf.3f52bdbbcc70b06a7edc.webp",
     "static/media/ionteriors.jpg": "/princeworld/static/media/ionteriors.bfafffe2f59daa2e5d9f.jpg",
+    "static/media/moongfxf.webp": "/princeworld/static/media/moongfxf.86cc09aa20b79d751a19.webp",
+    "static/media/cornhdlg.jpg": "/princeworld/static/media/cornhdlg.863ad80a502eb3a64008.jpg",
     "static/media/DALLECornSeedsfxf.webp": "/princeworld/static/media/DALLECornSeedsfxf.7b4a8add6420bf36edf8.webp",
+    "static/media/white-rice-in-sack-ai-generated-photo.jpg": "/princeworld/static/media/white-rice-in-sack-ai-generated-photo.2a42f85159d5f029b510.jpg",
+    "static/media/masoorfxf.webp": "/princeworld/static/media/masoorfxf.3910ffd449aa4d6d869a.webp",
     "static/media/sm1.jpeg": "/princeworld/static/media/sm1.008506d78182c0e56dd3.jpeg",
+    "static/media/Ram sagar bhai.jpg": "/princeworld/static/media/Ram sagar bhai.a879bf9c0eb40dc8daee.jpg",
     "static/media/rice.webp": "/princeworld/static/media/rice.13e45522d9e841c7ec65.webp",
     "static/media/Civil-Contracts.webp": "/princeworld/static/media/Civil-Contracts.078b337105471dadaa42.webp",
     "static/media/makhanahd.avif": "/princeworld/static/media/makhanahd.fd33f235cc9c8edb68ea.avif",
-    "static/media/sm2.avif": "/princeworld/static/media/sm2.e5cf49b984fe03fe440c.avif",
     "static/media/slick.svg": "/princeworld/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/princeworld/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/princeworld/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/princeworld/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/princeworld/index.html",
-    "main.93ce2b33.css.map": "/princeworld/static/css/main.93ce2b33.css.map",
-    "main.0d07c925.js.map": "/princeworld/static/js/main.0d07c925.js.map",
-    "488.2c8f348d.chunk.js.map": "/princeworld/static/js/488.2c8f348d.chunk.js.map"
+    "main.ba9bad04.css.map": "/princeworld/static/css/main.ba9bad04.css.map",
+    "main.20d4c16b.js.map": "/princeworld/static/js/main.20d4c16b.js.map",
+    "488.7f1fec7b.chunk.js.map": "/princeworld/static/js/488.7f1fec7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93ce2b33.css",
-    "static/js/main.0d07c925.js"
+    "static/css/main.ba9bad04.css",
+    "static/js/main.20d4c16b.js"
   ]
 }
