@@ -7,27 +7,41 @@ const Footer = () => {
       sx={{
         backgroundColor: '#4A2C2C',
         color: 'white',
-        padding: '60px 40px',
+        padding: { xs: '40px 20px', sm: '50px 30px', md: '60px 40px' },
         display: 'flex',
         flexDirection: 'column',
         gap: '30px',
-        height: 'auto',
       }}
     >
       {/* Header Section */}
-      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
+          justifyContent: 'space-between',
+          alignItems: { xs: 'flex-start', sm: 'center' },
+          textAlign: { xs: 'center', sm: 'left' },
+          gap: { xs: 3, sm: 0 },
+        }}
+      >
         <Typography
-          variant="h3"
+          variant="h5"
           sx={{
             fontFamily: 'Georgia',
             fontStyle: 'italic',
             fontWeight: 400,
-            maxWidth: '80%',
+            maxWidth: { xs: '100%', sm: '80%' },
           }}
         >
           Connecting the World with Excellence in Import-Export Solutions
         </Typography>
-        <Box sx={{ display: 'flex', gap: '15px' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' },
+            gap: '15px',
+          }}
+        >
           <Button
             variant="contained"
             sx={{
@@ -58,9 +72,17 @@ const Footer = () => {
           </Button>
         </Box>
       </Box>
-      <Divider style={{ width: '100%', backgroundColor: '#ffffff', height: '1px' }} />
+
+      <Divider sx={{ backgroundColor: '#ffffff', height: '1px' }} />
+
       {/* Links Section */}
-      <Grid container spacing={4} sx={{ marginTop: '20px' }}>
+      <Grid
+        container
+        spacing={4}
+        sx={{
+          marginTop: '20px',
+        }}
+      >
         <Grid item xs={12} sm={6} md={3}>
           <Typography
             variant="h6"
@@ -68,30 +90,17 @@ const Footer = () => {
           >
             About Us
           </Typography>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Our Mission
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Leadership Team
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block' }}
-          >
-            Global Presence
-          </Link>
+          {['Our Mission', 'Leadership Team', 'Global Presence'].map((item) => (
+            <Link
+              key={item}
+              href="#"
+              underline="none"
+              color="inherit"
+              sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
+            >
+              {item}
+            </Link>
+          ))}
         </Grid>
 
         <Grid item xs={12} sm={6} md={3}>
@@ -101,30 +110,17 @@ const Footer = () => {
           >
             Services
           </Typography>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Import Solutions
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Export Solutions
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block' }}
-          >
-            Logistics Management
-          </Link>
+          {['Import Solutions', 'Export Solutions', 'Logistics Management'].map((item) => (
+            <Link
+              key={item}
+              href="#"
+              underline="none"
+              color="inherit"
+              sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
+            >
+              {item}
+            </Link>
+          ))}
         </Grid>
 
         <Grid item xs={12} sm={6} md={3}>
@@ -134,22 +130,17 @@ const Footer = () => {
           >
             Resources
           </Typography>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Blog & Insights
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block' }}
-          >
-            Case Studies
-          </Link>
+          {['Blog & Insights', 'Case Studies'].map((item) => (
+            <Link
+              key={item}
+              href="#"
+              underline="none"
+              color="inherit"
+              sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
+            >
+              {item}
+            </Link>
+          ))}
         </Grid>
 
         <Grid item xs={12} sm={6} md={3}>
@@ -159,22 +150,17 @@ const Footer = () => {
           >
             Contact
           </Typography>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
-          >
-            Get in Touch
-          </Link>
-          <Link
-            href="#"
-            underline="none"
-            color="inherit"
-            sx={{ fontSize: '14px', display: 'block' }}
-          >
-            Office Locations
-          </Link>
+          {['Get in Touch', 'Office Locations'].map((item) => (
+            <Link
+              key={item}
+              href="#"
+              underline="none"
+              color="inherit"
+              sx={{ fontSize: '14px', display: 'block', marginBottom: '6px' }}
+            >
+              {item}
+            </Link>
+          ))}
         </Grid>
       </Grid>
     </Box>

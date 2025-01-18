@@ -12,6 +12,8 @@ import DallESpicesfxf from './images/DallESpicesfxf.webp'
 import rice from './images/rice.webp'
 import DALLEMoongnMasoorfxf from './images/DALLEMoongnMasoorfxf.webp'
 import makhana from './images/makhanahd.avif'
+import masoor from './images/masoorfxf.webp'
+import moong from './images/moongfxf.webp'
 
 
 function Details() {
@@ -19,8 +21,16 @@ function Details() {
     {
       key: uuidv4(),
       content: (
-        <CardNews imagen={DALLEMoongnMasoorfxf} title="Moong/Mung Beans and Masoor/red Lentils" />
+        <CardNews imagen={moong} title="Moong/Mung Beans" />
       )
+      // and 
+    },
+    {
+      key: uuidv4(),
+      content: (
+        <CardNews imagen={masoor} title="Masoor/Red Lentil" />
+      )
+      // and Masoor/red Lentil
     },
     {
       key: uuidv4(),

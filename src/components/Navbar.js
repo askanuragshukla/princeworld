@@ -1,27 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import IconButton from '@mui/material/IconButton';
+import Drawer from '@mui/material/Drawer';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
 
-const Navbar = ({activePage,setActivePage}) => {
+const Navbar = ({ activePage, setActivePage }) => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm')); // Check if screen size is small
+
+  const toggleDrawer = (open) => () => {
+    setDrawerOpen(open);
+  };
+
+  const navLinks = ['Home', 'About', 'Contact', 'Products', 'Blog'];
+
   return (
-    <AppBar position="static" style={{   background: '#4A2C2C', padding: '0.5rem 1rem' }}>
-      <Toolbar
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          padding: '0',
-        }}
-      >
-        {/* Top Section: Email and Contact Number */}
-        <Box
+    <AppBar position="static" style={{ background: '#4A2C2C', padding: '0.5rem 1rem' }}>
+          <Box
           display="flex"
           justifyContent="flex-end"
           alignItems="center"
@@ -44,71 +50,87 @@ const Navbar = ({activePage,setActivePage}) => {
 
         {/* Divider Line */}
         <Divider style={{ width: '100%', backgroundColor: '#ffffff', height: '1px' }} />
+      <Toolbar style={{ display: 'flex', justifyContent: 'space-between', padding: '0' }}>
+        {/* Logo */}
+        
+        <Box display="flex" alignItems="center">
+          <Typography variant="h6" component="div" style={{ fontWeight: 'bold' }}>
+            Prince World Exim
+          </Typography>
+        </Box>
 
-        {/* Bottom Section: Logo, Navigation Links, and Button */}
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          width="100%"
-          style={{ marginTop: '0.5rem' }}
-        >
-          {/* Left Section: Logo */}
-          <Box display="flex" alignItems="center">
-            {/* <img
-              src="https://via.placeholder.com/40" // Replace with your logo
-              alt="Nogistic Logo"
-              style={{ marginRight: '8px' }}
-            /> */}
-            <Typography variant="h6" component="div" style={{ fontWeight: 'bold' }}>
-              Prince World Exim
-            </Typography>
-          </Box>
+        {/* Contact Info (Hidden on small screens) */}
+       
 
-          {/* Middle Section: Navigation Links */}
+        {/* Navigation Links or Hamburger Menu */}
+        {isSmallScreen ? (
+          <>
+            <IconButton
+              color="inherit"
+              edge="end"
+              onClick={toggleDrawer(true)}
+              aria-label="menu"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
+              <Box
+                sx={{
+                  width: 250,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  padding: '1rem',
+                  background: '#4A2C2C',
+                  height: '100%',
+                }}
+              >
+                <IconButton
+                  sx={{ alignSelf: 'flex-end', color: 'white' }}
+                  onClick={toggleDrawer(false)}
+                >
+                  <CloseIcon />
+                </IconButton>
+                {navLinks.map((item) => (
+                  <Button
+                    key={item}
+                    onClick={() => {
+                      setActivePage(item);
+                      setDrawerOpen(false);
+                    }}
+                    style={{
+                      color: 'white',
+                      fontWeight: 500,
+                      textTransform: 'capitalize',
+                      margin: '0.5rem 0',
+                    }}
+                  >
+                    {item}
+                  </Button>
+                ))}
+              </Box>
+            </Drawer>
+          </>
+        ) : (
           <Box display="flex" gap={3}>
-            {['Home', 'About', 'Contact', 'Products', 'Blog'].map((item) => (
+            {navLinks.map((item) => (
               <Button
                 key={item}
-              //  href={`${item.toLowerCase()}`}
-                underline="none"
-                color="inherit"
-                style={{ fontFamily: '"Roboto", sans-serif',
+                onClick={() => setActivePage(item)}
+                style={{
+                  color: 'white',
                   fontWeight: 500,
                   fontSize: '1rem',
-                  letterSpacing: 1,
                   textTransform: 'capitalize',
-                  marginRight: 2, '&:hover': {
-                  cursor: 'pointer',
-                }, }}
-                onClick={() => setActivePage(`${item}`)}
+                }}
               >
                 {item}
               </Button>
             ))}
           </Box>
-
-          {/* Right Section: Contact Button */}
-          {/* <Button
-            variant="contained"
-            color="secondary"
-            style={{
-              textTransform: 'none',
-              backgroundColor: '#ffffff',
-              color: '#6c5ce7',
-              fontWeight: 'bold',
-              padding: '0.5rem 1rem',
-            }}
-          >
-            Contact Us →
-          </Button> */}
-        </Box>
+        )}
       </Toolbar>
     </AppBar>
   );
 };
 
 export default Navbar;
-
-
-// spices  

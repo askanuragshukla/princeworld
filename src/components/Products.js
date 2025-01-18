@@ -6,7 +6,7 @@ import sm1 from './images/sm1.jpeg'
 import RiceBowlIcon from '@mui/icons-material/RiceBowl';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import { motion } from 'framer-motion';
-
+import spiceprhdlg from './images/spicepr.jpg'
 
 const Products = () => {
   
@@ -49,16 +49,16 @@ const SectionTitle = styled(Typography)({
                </Typography> */}
              </Background>
 
-             
-    <Grid container spacing={6} alignItems="center" justifyContent="center" sx={{    background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem',marginTop:0,marginBottom:8 }}>
+           
+             <Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem', marginTop: 0, marginBottom: 8, '@media (max-width:600px)': { fontSize: '1rem', } }}>
   <Grid item xs={12} md={6}>
     <motion.img
       src="https://www.whiskaffair.com/wp-content/uploads/2017/12/Makhana-Namkeen-2-3.jpg"
       alt="Market Investment Illustration"
       style={{
-        height: '450px',  // Adjust height to a smaller size
+        height: '450px', // Adjust height to a smaller size
         width: '550px',
-        borderRadius:25,
+        borderRadius: 25,
       }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -67,249 +67,295 @@ const SectionTitle = styled(Typography)({
   </Grid>
   
   <Grid item xs={12} md={6}>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          color: "white",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          lineHeight: 1.4,
+          fontSize: "2.5rem",
+        }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "white",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.4,
-            fontSize: "2.5rem",
-          }}
-        >
-          Makhana, Fox nuts.
-        </Typography>
-        <Typography
-          variant="h6"
-          color="textSecondary"
-          paragraph
-          sx={{
-            fontStyle: "italic",
-            fontWeight: 400,
-            color:'white',
-            maxWidth: "450px",
-            marginBottom: "2rem",
-            fontSize: "1.1rem",
-          }}
-        >
-Makhanas are small, white puffs high in antioxidants such as vitamin A, magnesium, and selenium. These antioxidants aid an improved immune system, protect the body from oxidative stress, and damage free radicals.        </Typography>
-
-        {/* Cards for Total Shipments and Global Reach */}
-       
-      </motion.div>
-    </Grid>
+        Makhana, Fox nuts.
+      </Typography>
+      <Typography
+        variant="h6"
+        color="textSecondary"
+        paragraph
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'white',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: "1.1rem",
+        }}
+      >
+        Makhanas are small, white puffs high in antioxidants such as vitamin A, magnesium, and selenium. These antioxidants aid an improved immune system, protect the body from oxidative stress, and damage free radicals.
+      </Typography>
+      <Typography
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'white',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: "1.1rem",
+        }}
+      >
+        We deliver a wide range of flavours including Peri Peri, Cream and Onion, Himalayan salt and Pepper, Tangy Tomato, Magic Masala, Cheese chill, and much more flavours in makhana products.
+      </Typography>
+    </motion.div>
+  </Grid>
 </Grid>
 
-<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{    background: 'linear-gradient(135deg,rgb(249, 249, 249),rgb(255, 255, 255),rgb(255, 255, 255))', padding: '2rem',marginTop:0,marginBottom:8 }}>
- 
-<Grid item xs={12} md={6}>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-       
+<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg,rgb(249, 249, 249),rgb(255, 255, 255),rgb(255, 255, 255))', padding: '2rem', marginTop: 0, marginBottom: 8 }}>
+
+  <Grid item xs={12} md={6}>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          color: "black",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          lineHeight: 1.4,
+          fontSize: {
+            xs: "2rem",  // Adjust font size for small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",  // Large screens
+          },
+          marginLeft: {
+            xs: "0",  // No margin on small screens
+            sm: "20px",  // Add margin on larger screens
+          },
+        }}
       >
-        <Typography
+        Rice
+      </Typography>
+      <Typography
+        variant="h6"
+        color="textSecondary"
+        paragraph
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'black',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: {
+            xs: "1rem",  // Adjust font size for small screens
+            sm: "1.1rem",  // Medium screens
+            md: "1.2rem",  // Large screens
+          },
+          marginLeft: {
+            xs: "0",  // No margin on small screens
+            sm: "20px",  // Add margin on larger screens
+          },
+        }}
+      >
+        Rice is a cereal grain and in its domesticated form is the staple food of over half of the world's population, particularly in Asia and Africa.
+      </Typography>
 
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "black",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.4,
-            fontSize: "2.5rem",
-            marginLeft:20
-          }}
-        >
-          Rice
-        </Typography>
-        <Typography
-          variant="h6"
-          color="textSecondary"
-          paragraph
-          sx={{
-            fontStyle: "italic",
-            fontWeight: 400,
-            color:'black',
-            maxWidth: "450px",
-            marginBottom: "2rem",
-            fontSize: "1.1rem",
-            marginLeft:20
-          }}
-        >
-Rice is a cereal grain and in its domesticated form is the staple food of over half of the world's population, particularly in Asia and Africa.
-       </Typography>
+      {/* Cards for Total Shipments and Global Reach */}
 
-        {/* Cards for Total Shipments and Global Reach */}
-       
-      </motion.div>
-    </Grid>
+    </motion.div>
+  </Grid>
+
   <Grid item xs={12} md={6}>
     <motion.img
       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_38OB-O3ct4_WTA4CLOW7rpDmuU8RkDVsQ&s"
       alt="Market Investment Illustration"
       style={{
-        height: '450px',  // Adjust height to a smaller size
-        width: '550px',
-        borderRadius:25,
+        height: 'auto',  // Automatically adjust height based on width
+        width: '100%',  // Set width to 100% to scale with the container
+        borderRadius: 25,
+        maxWidth: '550px',  // Limit the max width
       }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     />
   </Grid>
-  
-  
+
 </Grid>
 
-<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{    background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem',marginTop:0,marginBottom:8 }}>
+<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem', marginTop: 0, marginBottom: 8 }}>
+
   <Grid item xs={12} md={6}>
     <motion.img
       src="https://thtyog.com/wp-content/uploads/2024/01/top-view-various-indian-spices-seasonings-table-2-scaled.jpg"
       alt="Market Investment Illustration"
       style={{
-        height: '450px',  // Adjust height to a smaller size
-        width: '550px',
-        borderRadius:25,
+        height: 'auto',  // Automatically adjust height based on width
+        width: '100%',  // Set width to 100% to scale with the container
+        borderRadius: 25,
+        maxWidth: '550px',  // Limit the max width
       }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     />
   </Grid>
-  
+
   <Grid item xs={12} md={6}>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          color: "white",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          lineHeight: 1.4,
+          fontSize: {
+            xs: "2rem",  // Adjust font size for small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",  // Large screens
+          },
+        }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "white",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.4,
-            fontSize: "2.5rem",
-          }}
-        >
-          Spices.
-        </Typography>
-        <Typography
-          variant="h6"
-          color="textSecondary"
-          paragraph
-          sx={{
-            fontStyle: "italic",
-            fontWeight: 400,
-            color:'white',
-            maxWidth: "450px",
-            marginBottom: "2rem",
-            fontSize: "1.1rem",
-          }}
-        >
-A spice is any seed, fruit, root, bark, or other plant substance in a form primarily used for flavoring or coloring food.
-
-
+        Spices
       </Typography>
 
-        {/* Cards for Total Shipments and Global Reach */}
-       
-      </motion.div>
-    </Grid>
+      <Typography
+        variant="h6"
+        color="textSecondary"
+        paragraph
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'white',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: {
+            xs: "1rem",  // Adjust font size for small screens
+            sm: "1.1rem",  // Medium screens
+            md: "1.2rem",  // Large screens
+          },
+        }}
+      >
+        A spice is any seed, fruit, root, bark, or other plant substance in a form primarily used for flavoring or coloring food.
+      </Typography>
+
+      {/* Cards for Total Shipments and Global Reach */}
+
+    </motion.div>
+  </Grid>
+
 </Grid>
 
-<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{    background: 'linear-gradient(135deg,rgb(249, 249, 249),rgb(255, 255, 255),rgb(255, 255, 255))', padding: '2rem',marginTop:0,marginBottom:8 }}>
- 
-<Grid item xs={12} md={6}>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-       
+<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg,rgb(249, 249, 249),rgb(255, 255, 255),rgb(255, 255, 255))', padding: '2rem', marginTop: 0, marginBottom: 8 }}>
+  
+  <Grid item xs={12} md={6}>
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          color: "black",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          lineHeight: 1.4,
+          fontSize: {
+            xs: "2rem",  // Adjust font size for small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",  // Large screens
+          },
+          marginLeft: {
+            xs: "0",  // No margin on small screens
+            sm: "20px",  // Add margin on larger screens
+          },
+        }}
       >
-        <Typography
+        Pulses
+      </Typography>
 
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "black",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.4,
-            fontSize: "2.5rem",
-            marginLeft:20
-          }}
-        >
-          Pulses
-        </Typography>
-        <Typography
-          variant="h6"
-          color="textSecondary"
-          paragraph
-          sx={{
-            fontStyle: "italic",
-            fontWeight: 400,
-            color:'black',
-            maxWidth: "450px",
-            marginBottom: "2rem",
-            fontSize: "1.1rem",
-            marginLeft:20
-          }}
-        >
-Pulses are the edible seeds of plants in the legume family. Pulses grow in pods and come in a variety of shapes, sizes and colors.      
-      
-      
-       </Typography>
+      <Typography
+        variant="h6"
+        color="textSecondary"
+        paragraph
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'black',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: {
+            xs: "1rem",  // Adjust font size for small screens
+            sm: "1.1rem",  // Medium screens
+            md: "1.2rem",  // Large screens
+          },
+          marginLeft: {
+            xs: "0",  // No margin on small screens
+            sm: "20px",  // Add margin on larger screens
+          },
+        }}
+      >
+        Pulses are the edible seeds of plants in the legume family. Pulses grow in pods and come in a variety of shapes, sizes, and colors.
+      </Typography>
 
-        {/* Cards for Total Shipments and Global Reach */}
-       
-      </motion.div>
-    </Grid>
+      {/* Cards for Total Shipments and Global Reach */}
+      
+    </motion.div>
+  </Grid>
+
   <Grid item xs={12} md={6}>
     <motion.img
       src="https://proveg.org/wp-content/uploads/2022/03/shutterstock_102557018.jpg"
       alt="Market Investment Illustration"
       style={{
-        height: '450px',  // Adjust height to a smaller size
-        width: '550px',
-        borderRadius:25,
+        height: 'auto',  // Automatically adjust height based on width
+        width: '100%',  // Set width to 100% to scale with the container
+        borderRadius: 25,
+        maxWidth: '550px',  // Limit the max width
       }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     />
   </Grid>
-  
-  
+
 </Grid>
 
-<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{    background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem',marginTop:0,marginBottom:8 }}>
+<Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem', marginTop: 0, marginBottom: 8 }}>
   <Grid item xs={12} md={6}>
     <motion.img
       src="https://domf5oio6qrcr.cloudfront.net/medialibrary/9531/iStock-481114390.jpg"
       alt="Market Investment Illustration"
       style={{
-        height: '450px',  // Adjust height to a smaller size
-        width: '550px',
-        borderRadius:25,
+        height: 'auto',  // Automatically adjust height based on width
+        width: '100%',  // Set width to 100% to scale with the container
+        borderRadius: 25,
+        maxWidth: '550px',  // Limit the max width
       }}
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -318,47 +364,55 @@ Pulses are the edible seeds of plants in the legume family. Pulses grow in pods 
   </Grid>
   
   <Grid item xs={12} md={6}>
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
+    <motion.div
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <Typography
+        variant="h3"
+        component="h1"
+        gutterBottom
+        sx={{
+          fontWeight: 700,
+          color: "white",
+          textTransform: "uppercase",
+          letterSpacing: "0.1em",
+          lineHeight: 1.4,
+          fontSize: {
+            xs: "2rem",  // Adjust font size for small screens
+            sm: "2.5rem",  // Medium screens
+            md: "3rem",  // Large screens
+          },
+        }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            color: "white",
-            textTransform: "uppercase",
-            letterSpacing: "0.1em",
-            lineHeight: 1.4,
-            fontSize: "2.5rem",
-          }}
-        >
-          Walnuts.
-        </Typography>
-        <Typography
-          variant="h6"
-          color="textSecondary"
-          paragraph
-          sx={{
-            fontStyle: "italic",
-            fontWeight: 400,
-            color:'white',
-            maxWidth: "450px",
-            marginBottom: "2rem",
-            fontSize: "1.1rem",
-          }}
-        >
-A walnut is the edible seed of any tree of the genus Juglans (family Juglandaceae), particularly the Persian or English walnut, Juglans regia.
-
+        Walnuts.
       </Typography>
-
-        {/* Cards for Total Shipments and Global Reach */}
-       
-      </motion.div>
-    </Grid>
+      
+      <Typography
+        variant="h6"
+        color="textSecondary"
+        paragraph
+        sx={{
+          fontStyle: "italic",
+          fontWeight: 400,
+          color: 'white',
+          maxWidth: "450px",
+          marginBottom: "2rem",
+          fontSize: {
+            xs: "1rem",  // Adjust font size for small screens
+            sm: "1.1rem",  // Medium screens
+            md: "1.2rem",  // Large screens
+          },
+        }}
+      >
+        A walnut is the edible seed of any tree of the genus Juglans (family Juglandaceae), particularly the Persian or English walnut, Juglans regia.
+      </Typography>
+      
+      {/* Add your cards or additional content here */}
+      
+    </motion.div>
+  </Grid>
 </Grid>
 <Container maxWidth="lg" sx={{ py: 5 }}>
   <Typography variant='h2' style={{textAlign:'center', fontWeight:'bold',marginTop:3,marginBottom:2}}>ALSO </Typography>
@@ -483,7 +537,7 @@ const servicesData = [
   {
     id: 4,
     title: 'Makhanas',
-    description: 'Nutritious pulses handpicked for quality.',
+    description: 'Nutritious pulses handpicked for quality. ',
     image: 'https://www.whiskaffair.com/wp-content/uploads/2017/12/Makhana-Namkeen-2-3.jpg',
     icon: <GrainIcon />,
   },

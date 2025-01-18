@@ -6,6 +6,14 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
+import ricehdimages from './images/white-rice-in-sack-ai-generated-photo.jpg'
+import cornhdimages from './images/cornhdlg.jpg'
+import walnuthdimages from './images/walnutlghd.png'
+import spicehdimages from './images/spiceshdlg.jpg'
+
+
+
+
 
 // Styled Box for the hero section with a dynamic background
 const HeroBox = styled(Box)(({ theme, backgroundImage }) => ({
@@ -38,15 +46,19 @@ export default function Hero() {
   const content = [
     {
       text: "We import the finest Makhana, Rice, Walnuts, and Corns from around the world.",
-      backgroundImage: "https://i.pinimg.com/originals/33/97/45/33974528aafacff2a8180c581068c877.jpg",
+      backgroundImage: ricehdimages,
     },
     {
-      text: "Delivering premium quality Rice and Walnuts to our customers globally.",
-      backgroundImage: "https://static.vecteezy.com/system/resources/previews/030/354/034/non_2x/white-rice-in-sack-ai-generated-photo.jpg",
+      text: "Delivering premium quality Rice and Corns to our customers globally.",
+      backgroundImage: cornhdimages,
     },
     {
-      text: "Your trusted partner in importing Corns and other premium commodities.",
-      backgroundImage: "https://5.imimg.com/data5/SELLER/Default/2024/8/440298534/ED/RR/SZ/126638229/premium-california-walnut.png",
+      text: "Your trusted partner in importing Corns, Spices and other premium commodities.",
+      backgroundImage: spicehdimages,
+    },
+    {
+      text: "We also import Spices, Lentils and much more .",
+      backgroundImage: walnuthdimages,
     },
   ];
 

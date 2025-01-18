@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Typography, Button, Avatar, IconButton } from '@mui/material';
+import { Box, Typography, Button, Avatar } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ramsagarbhai from './images/Ram sagar bhai.jpg';
 
 const WeAreZens = () => {
   return (
@@ -11,9 +12,8 @@ const WeAreZens = () => {
         justifyContent: 'space-between',
         background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)',
         color: '#fff',
-        padding: '40px 60px',
+        padding: { xs: '20px 15px', sm: '40px 30px', md: '40px 60px' },
         position: 'relative',
-        height: '100vh',
       }}
     >
       {/* Top Section */}
@@ -22,15 +22,17 @@ const WeAreZens = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'flex-start',
+          flexDirection: { xs: 'column', sm: 'row' },
         }}
       >
         <Typography
           variant="h1"
           sx={{
-            fontSize: '120px',
+            fontSize: { xs: '40px', sm: '60px', md: '120px' },
             fontWeight: 'bold',
             lineHeight: 1,
             whiteSpace: 'nowrap',
+            textAlign: { xs: 'center', sm: 'left' },
           }}
         >
           we are
@@ -39,10 +41,11 @@ const WeAreZens = () => {
         <Typography
           variant="h1"
           sx={{
-            fontSize: '120px',
+            fontSize: { xs: '40px', sm: '60px', md: '120px' },
             fontWeight: 'bold',
             lineHeight: 1,
             whiteSpace: 'nowrap',
+            textAlign: { xs: 'center', sm: 'left' },
           }}
         >
           PWe
@@ -53,54 +56,66 @@ const WeAreZens = () => {
       <Box
         sx={{
           display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
           alignItems: 'center',
-          mt: 4,
+          mt: { xs: 2, sm: 4 },
         }}
       >
         {/* Left Section */}
-        <Box sx={{ position: 'relative', width: '50%' }}>
+        <Box sx={{ position: 'relative', width: { xs: '100%', sm: '50%' } }}>
           <Box
             component="img"
-            src="https://thtyog.com/wp-content/uploads/2024/01/top-view-various-indian-spices-seasonings-table-2-scaled.jpg"
+            src={ramsagarbhai}
             alt="Agriculture Product"
             sx={{
               borderRadius: '8px',
-              width: '80%',
-              height: '80%',
+              width: '100%',
+              height: 'auto',
+              maxWidth: '500px',
             }}
           />
-         
         </Box>
 
         {/* Right Section */}
         <Box
           sx={{
-            width: '45%',
+            width: { xs: '100%', sm: '45%' },
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'flex-start',
+            alignItems: { xs: 'center', sm: 'flex-start' },
             justifyContent: 'space-between',
+            mt: { xs: 3, sm: 0 },
           }}
         >
-          <Typography sx={{ fontSize: '18px', lineHeight: 1.6, mb: 3 }}>
-            At Prince World Exim, we specialize in the import and export of premium
-            agricultural products, including spices, corn, makhana, rice, and
-            pulses. Our commitment to quality and timely delivery ensures we
-            serve global markets with excellence.
+          <Typography
+            sx={{
+              fontSize: { xs: '16px', sm: '18px' },
+              lineHeight: 1.6,
+              mb: 3,
+              textAlign: { xs: 'center', sm: 'left' },
+            }}
+          >
+            At Prince World Exim, we specialize in the import and export of
+            premium agricultural products, including spices, corn, makhana,
+            rice, and pulses. Our commitment to quality and timely delivery
+            ensures we serve global markets with excellence.
           </Typography>
 
-          <Box sx={{ display: 'flex', gap: 2, mb: 3 }}>
-            <Avatar src="https://via.placeholder.com/80" alt="Team Member 1" />
-            <Avatar src="https://via.placeholder.com/80" alt="Team Member 2" />
-            <Avatar src="https://via.placeholder.com/80" alt="Team Member 3" />
-            <Avatar src="https://via.placeholder.com/80" alt="Team Member 4" />
-          </Box>
+          <Avatar
+            src="https://via.placeholder.com/80"
+            alt="Team Member"
+            sx={{
+              width: { xs: '60px', sm: '80px' },
+              height: { xs: '60px', sm: '80px' },
+              mb: 2,
+            }}
+          />
 
-          <Typography>
-            <strong>Eam Sharma</strong>
+          <Typography sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
+            <strong>Ram Sagar Sharma</strong>
             <br />
-            Propertier
+            Proprietor
           </Typography>
         </Box>
       </Box>
@@ -109,8 +124,10 @@ const WeAreZens = () => {
       <Box
         sx={{
           display: 'flex',
+          flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
-          alignItems: 'flex-start',
+          alignItems: { xs: 'center', sm: 'flex-start' },
+          mt: { xs: 3, sm: 5 },
         }}
       >
         <Button
@@ -126,6 +143,7 @@ const WeAreZens = () => {
               backgroundColor: '#fff',
               color: '#000',
             },
+            mb: { xs: 2, sm: 0 },
           }}
         >
           Explore Our Products
@@ -136,7 +154,7 @@ const WeAreZens = () => {
             fontSize: '16px',
             lineHeight: 1.6,
             maxWidth: '400px',
-            textAlign: 'right',
+            textAlign: { xs: 'center', sm: 'right' },
           }}
         >
           Discover a world of high-quality agricultural products sourced
