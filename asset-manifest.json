@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/princeworld/static/css/main.ba9bad04.css",
-    "main.js": "/princeworld/static/js/main.20d4c16b.js",
-    "static/js/488.7f1fec7b.chunk.js": "/princeworld/static/js/488.7f1fec7b.chunk.js",
+    "main.js": "/princeworld/static/js/main.7466f917.js",
+    "static/js/488.2c8f348d.chunk.js": "/princeworld/static/js/488.2c8f348d.chunk.js",
     "static/media/walnutlghd.png": "/princeworld/static/media/walnutlghd.119d2c8e7d90b47428fd.png",
+    "static/media/akhamasoor.png": "/princeworld/static/media/akhamasoor.e4e0a78495bce20e18cc.png",
+    "static/media/dimagginuts.jpg": "/princeworld/static/media/dimagginuts.2ff988e4bf24ed4950e2.jpg",
+    "static/media/phool-makhana-powder.jpg": "/princeworld/static/media/phool-makhana-powder.bcb548a1672868adac11.jpg",
     "static/media/DallESpicesfxf.webp": "/princeworld/static/media/DallESpicesfxf.9c75821144e8d8a0f890.webp",
     "static/media/spicepr.jpg": "/princeworld/static/media/spicepr.4e0b0dff81a0b2fce8a5.jpg",
     "static/media/spiceshdlg.jpg": "/princeworld/static/media/spiceshdlg.4e0b0dff81a0b2fce8a5.jpg",
@@ -13,23 +16,30 @@
     "static/media/cornhdlg.jpg": "/princeworld/static/media/cornhdlg.863ad80a502eb3a64008.jpg",
     "static/media/DALLECornSeedsfxf.webp": "/princeworld/static/media/DALLECornSeedsfxf.7b4a8add6420bf36edf8.webp",
     "static/media/white-rice-in-sack-ai-generated-photo.jpg": "/princeworld/static/media/white-rice-in-sack-ai-generated-photo.2a42f85159d5f029b510.jpg",
-    "static/media/masoorfxf.webp": "/princeworld/static/media/masoorfxf.3910ffd449aa4d6d869a.webp",
+    "static/media/dals.jpg": "/princeworld/static/media/dals.feeeb389ba8936db8449.jpg",
+    "static/media/istockphoto-477756915-612x612.jpg": "/princeworld/static/media/istockphoto-477756915-612x612.d6f96d83a4af716a9d10.jpg",
     "static/media/sm1.jpeg": "/princeworld/static/media/sm1.008506d78182c0e56dd3.jpeg",
+    "static/media/lotuspop.webp": "/princeworld/static/media/lotuspop.941358f4fa837f178fbd.webp",
     "static/media/Ram sagar bhai.jpg": "/princeworld/static/media/Ram sagar bhai.a879bf9c0eb40dc8daee.jpg",
+    "static/media/Makhana-Namkeen-2-3.jpg": "/princeworld/static/media/Makhana-Namkeen-2-3.ce399ca59da954ac7985.jpg",
+    "static/media/makhanajaggerycookies.webp": "/princeworld/static/media/makhanajaggerycookies.e0753786b92a556cd1ee.webp",
     "static/media/rice.webp": "/princeworld/static/media/rice.13e45522d9e841c7ec65.webp",
+    "static/media/Makhana-4-Flavours.webp": "/princeworld/static/media/Makhana-4-Flavours.bd049d062b9b60ee5a6c.webp",
     "static/media/Civil-Contracts.webp": "/princeworld/static/media/Civil-Contracts.078b337105471dadaa42.webp",
     "static/media/makhanahd.avif": "/princeworld/static/media/makhanahd.fd33f235cc9c8edb68ea.avif",
+    "static/media/chawalbr.jpg": "/princeworld/static/media/chawalbr.2052ce8b4821473fa556.jpg",
+    "static/media/dryfrtmixmakh.jpg": "/princeworld/static/media/dryfrtmixmakh.827751cb6f92e2329fe5.jpg",
     "static/media/slick.svg": "/princeworld/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/princeworld/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/princeworld/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/princeworld/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/princeworld/index.html",
     "main.ba9bad04.css.map": "/princeworld/static/css/main.ba9bad04.css.map",
-    "main.20d4c16b.js.map": "/princeworld/static/js/main.20d4c16b.js.map",
-    "488.7f1fec7b.chunk.js.map": "/princeworld/static/js/488.7f1fec7b.chunk.js.map"
+    "main.7466f917.js.map": "/princeworld/static/js/main.7466f917.js.map",
+    "488.2c8f348d.chunk.js.map": "/princeworld/static/js/488.2c8f348d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba9bad04.css",
-    "static/js/main.20d4c16b.js"
+    "static/js/main.7466f917.js"
   ]
 }
