@@ -7,7 +7,16 @@ import RiceBowlIcon from '@mui/icons-material/RiceBowl';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import { motion } from 'framer-motion';
 import spiceprhdlg from './images/spicepr.jpg'
-
+import makhananmk from './images/Makhana-Namkeen-2-3.jpg'
+import chawalbr from './images/chawalbr.jpg'
+import masale from './images/istockphoto-477756915-612x612.jpg'
+import dals from './images/dals.jpg'
+import dimaginuts from './images/dimagginuts.jpg'
+import makhanajaggerycookies from './images/makhanajaggerycookies.webp'
+import makhanaswtdryf from './images/dryfrtmixmakh.jpg'
+import makhanapowder from './images/phool-makhana-powder.jpg'
+import makhanaraw from './images/lotuspop.webp'
+import makhanaflav from './images/Makhana-4-Flavours.webp'
 const Products = () => {
   
 const Background = styled(Box)({
@@ -39,10 +48,10 @@ const SectionTitle = styled(Typography)({
       <div >
        <Background>
                <SectionTitle style={{color:'white'}}>
-                 Why Choose Global Trade Experts?
+                 Why Choose Prince World Exim?
                </SectionTitle>
                <Typography sx={{ textAlign: 'center', fontSize: '1.2rem', maxWidth: '800px', marginBottom: '30px',color:'white' }}>
-                 We bridge the gap between international markets, offering seamless import and export solutions that ensure timely delivery, cost-efficiency, and high-quality service.
+                 We bridge the gap between international markets, offering seamless export solutions that ensure timely delivery, cost-efficiency, and high-quality service.
                </Typography>
                {/* <Typography variant="contained" sx={{  color: 'black', fontWeight: 'bold', borderRadius: '30px', padding: '10px 30px' }}>
                  Get Started
@@ -53,7 +62,7 @@ const SectionTitle = styled(Typography)({
              <Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem', marginTop: 0, marginBottom: 8, '@media (max-width:600px)': { fontSize: '1rem', } }}>
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://www.whiskaffair.com/wp-content/uploads/2017/12/Makhana-Namkeen-2-3.jpg"
+      src={makhananmk}
       alt="Market Investment Illustration"
       style={{
         height: '450px', // Adjust height to a smaller size
@@ -85,7 +94,7 @@ const SectionTitle = styled(Typography)({
           fontSize: "2.5rem",
         }}
       >
-        Makhana, Fox nuts.
+        Makhana / Fox nuts.
       </Typography>
       <Typography
         variant="h6"
@@ -180,7 +189,7 @@ const SectionTitle = styled(Typography)({
 
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_38OB-O3ct4_WTA4CLOW7rpDmuU8RkDVsQ&s"
+      src={chawalbr}
       alt="Market Investment Illustration"
       style={{
         height: 'auto',  // Automatically adjust height based on width
@@ -200,7 +209,7 @@ const SectionTitle = styled(Typography)({
 
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://thtyog.com/wp-content/uploads/2024/01/top-view-various-indian-spices-seasonings-table-2-scaled.jpg"
+      src={masale}
       alt="Market Investment Illustration"
       style={{
         height: 'auto',  // Automatically adjust height based on width
@@ -330,7 +339,7 @@ const SectionTitle = styled(Typography)({
 
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://proveg.org/wp-content/uploads/2022/03/shutterstock_102557018.jpg"
+      src={dals}
       alt="Market Investment Illustration"
       style={{
         height: 'auto',  // Automatically adjust height based on width
@@ -349,7 +358,7 @@ const SectionTitle = styled(Typography)({
 <Grid container spacing={6} alignItems="center" justifyContent="center" sx={{ background: 'linear-gradient(135deg, #4A2C2C, #4A2C2C, #4A2C2C)', padding: '2rem', marginTop: 0, marginBottom: 8 }}>
   <Grid item xs={12} md={6}>
     <motion.img
-      src="https://domf5oio6qrcr.cloudfront.net/medialibrary/9531/iStock-481114390.jpg"
+      src={dimaginuts}
       alt="Market Investment Illustration"
       style={{
         height: 'auto',  // Automatically adjust height based on width
@@ -515,37 +524,37 @@ const SectionTitle = styled(Typography)({
 const servicesData = [
   {
     id: 1,
-    title: 'Spices',
-    description: 'All Exotic indian and Italian Spices',
-    image: 'https://thtyog.com/wp-content/uploads/2024/01/top-view-various-indian-spices-seasonings-table-2-scaled.jpg',
+    title: 'Makhana Jaggery Cookies',
+    description: 'A healthy cookies made from Makhana/Fox nuts and Jaggery',
+    image: makhanajaggerycookies,
     icon: <LocalFloristIcon />,
   },
   {
     id: 2,
-    title: 'Rice',
-    description: 'Premium rice varieties for global markets.',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_38OB-O3ct4_WTA4CLOW7rpDmuU8RkDVsQ&s',
+    title: 'Makhana Sweet Dryfruit Mix',
+    description: 'A sweet Savour with puch of Dry Fruits a super delicious and healthy product.',
+    image: makhanaswtdryf,
     icon: <RiceBowlIcon />,
   },
   {
     id: 3,
-    title: 'Pulses',
-    description: 'Nutritious pulses handpicked for quality.',
-    image: 'https://proveg.org/wp-content/uploads/2022/03/shutterstock_102557018.jpg',
+    title: 'Makhana Powder',
+    description: 'A Powdered from of Phool Makahan/ fox nuts',
+    image: makhanapowder,
     icon: <GrainIcon />,
   },
   {
     id: 4,
-    title: 'Makhanas',
-    description: 'Nutritious pulses handpicked for quality. ',
-    image: 'https://www.whiskaffair.com/wp-content/uploads/2017/12/Makhana-Namkeen-2-3.jpg',
+    title: 'Raw Makhanas',
+    description: 'Nutritious pulses handpicked for quality. Raw Makhanas in different sizes. ',
+    image: makhanaraw,
     icon: <GrainIcon />,
   },
   {
     id: 5,
-    title: 'Walnuts',
-    description: 'Nutritious Afghan Walnuts Good for brain and health.',
-    image: 'https://domf5oio6qrcr.cloudfront.net/medialibrary/9531/iStock-481114390.jpg',
+    title: 'Flavoured Makhanas',
+    description: '350gm, 40gm pouchs, 85gm jar Each of Olive Oil and Vegetable oil',
+    image: makhanaflav,
     icon: <GrainIcon />,
   },
   {

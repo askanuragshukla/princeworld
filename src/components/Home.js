@@ -8,7 +8,7 @@ import WeAreZens from './WeAreZens';
 import RecentProject from './RecontProject';
 import sm1 from './images/sm1.jpeg';
 
-const Home = () => {
+const Home = ({setActivePage}) => {
   return (
     <div>
       {/* Hero Section */}
@@ -30,7 +30,7 @@ const Home = () => {
       <Hero />
       <Testimonials />
       <OurServices />
-      <WeAreZens />
+      <WeAreZens setActivePage={setActivePage} />
       
       {/* Section with Image and Text */}
       <Grid
@@ -129,7 +129,7 @@ const Home = () => {
                       fontSize: { xs: '1.5rem', sm: '2rem' },
                     }}
                   >
-                    5,00+
+                    500+
                   </Typography>
                 </Card>
               </Grid>

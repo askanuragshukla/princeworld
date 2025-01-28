@@ -3,7 +3,7 @@ import { Box, Typography, Button, Avatar } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ramsagarbhai from './images/Ram sagar bhai.jpg';
 
-const WeAreZens = () => {
+const WeAreZens = ({setActivePage}) => {
   return (
     <Box
       sx={{
@@ -35,7 +35,7 @@ const WeAreZens = () => {
             textAlign: { xs: 'center', sm: 'left' },
           }}
         >
-          we are
+          Meet Our
         </Typography>
 
         <Typography
@@ -48,7 +48,7 @@ const WeAreZens = () => {
             textAlign: { xs: 'center', sm: 'left' },
           }}
         >
-          PWe
+          CEO
         </Typography>
       </Box>
 
@@ -104,7 +104,7 @@ const WeAreZens = () => {
 
           <Avatar
             src="https://via.placeholder.com/80"
-            alt="Team Member"
+            alt="Ream Member"
             sx={{
               width: { xs: '60px', sm: '80px' },
               height: { xs: '60px', sm: '80px' },
@@ -145,6 +145,7 @@ const WeAreZens = () => {
             },
             mb: { xs: 2, sm: 0 },
           }}
+         
         >
           Explore Our Products
         </Button>

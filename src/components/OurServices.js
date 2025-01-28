@@ -5,30 +5,30 @@ const OurServices = () => {
   const services = [
     {
       id: 1,
-      title: "Makhana Export",
+      title: "Makhana",
       description:
         "We specialize in exporting premium-quality Makhana, ensuring freshness and nutritional value in every shipment.",
       icon: "🌰",
     },
     {
       id: 2,
-      title: "Corn Export & Import",
+      title: "Corn",
       description:
         "Our company facilitates the export and import of high-quality corn, meeting international standards for food and agriculture.",
       icon: "🌽",
     },
     {
       id: 3,
-      title: "Rice Export",
+      title: "Rice",
       description:
         "We deliver superior-grade rice varieties, including basmati and non-basmati, to clients across the globe.",
       icon: "🍚",
     },
     {
       id: 4,
-      title: "Walnuts Export",
+      title: "Moong/Mung Beans",
       description:
-        "Our export services ensure the delivery of premium-grade walnuts, rich in flavor and nutrients, to international markets.",
+        "Our export services ensure the delivery of premium-grade Moong, rich in flavor and nutrients, to international markets.",
       icon: "🥜",
     },
   ];

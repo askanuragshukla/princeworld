@@ -12,12 +12,18 @@ import DallESpicesfxf from './images/DallESpicesfxf.webp'
 import rice from './images/rice.webp'
 import DALLEMoongnMasoorfxf from './images/DALLEMoongnMasoorfxf.webp'
 import makhana from './images/makhanahd.avif'
-import masoor from './images/masoorfxf.webp'
+import masoor from './images/akhamasoor.png'
 import moong from './images/moongfxf.webp'
 
 
 function Details() {
   let cards = [
+    {
+      key: uuidv4(),
+      content: (
+        <CardNews imagen={makhana} title="Makhana/Fox nuts" />
+      )
+    },
     {
       key: uuidv4(),
       content: (
@@ -32,12 +38,7 @@ function Details() {
       )
       // and Masoor/red Lentil
     },
-    {
-      key: uuidv4(),
-      content: (
-        <CardNews imagen={makhana} title="Makhana/Fox nuts" />
-      )
-    },
+    
     {
       key: uuidv4(),
       content: (

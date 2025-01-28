@@ -58,7 +58,7 @@ const RecentProject = () => {
                 textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              Also in Civil Contracts and Interior Works
+              We also deal in interior works and civil contracts.
             </Typography>
             <Typography
               variant="h6"
@@ -75,7 +75,7 @@ const RecentProject = () => {
               }}
             >
               Specialize in civil contracts, interior design, and high-quality furniture and hardware
-              solutions, ensuring every project is completed with excellence.
+              solutions and exports, ensuring every project is completed with excellence.
             </Typography>
 
             {/* Right Image */}

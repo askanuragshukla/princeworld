@@ -45,7 +45,7 @@ export default function Hero() {
 
   const content = [
     {
-      text: "We import the finest Makhana, Rice, Walnuts, and Corns from around the world.",
+      text: "We Export the finest Makhana, Rice, Walnuts, and Corns from around the world.",
       backgroundImage: ricehdimages,
     },
     {
@@ -53,11 +53,11 @@ export default function Hero() {
       backgroundImage: cornhdimages,
     },
     {
-      text: "Your trusted partner in importing Corns, Spices and other premium commodities.",
+      text: "Your trusted partner in Exporting Corns, Spices and other premium commodities.",
       backgroundImage: spicehdimages,
     },
     {
-      text: "We also import Spices, Lentils and much more .",
+      text: "We also Export Spices, Lentils and much more .",
       backgroundImage: walnuthdimages,
     },
   ];
@@ -101,12 +101,12 @@ export default function Hero() {
             {content[currentTextIndex].text}
           </Typography>
           <Typography variant="body1" paragraph sx={{ fontSize: '1.2rem' }}>
-            Your gateway to premium imported commodities. Experience quality and trust with us.
+            Your gateway to premium Exported commodities. Experience quality and trust with us.
           </Typography>
           <Grid container spacing={4}>
             <Grid item xs={12} md={4}>
               <Typography variant="h5" fontWeight="bold">500+</Typography>
-              <Typography variant="body2" color="grey.400">Products Imported</Typography>
+              <Typography variant="body2" color="grey.400">Products exported</Typography>
             </Grid>
             <Grid item xs={12} md={4}>
               <Typography variant="h5" fontWeight="bold">50K+</Typography>

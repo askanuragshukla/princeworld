@@ -13,6 +13,7 @@ import BusinessIcon from "@mui/icons-material/Business";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { MailLock, MailOutline, Person2Rounded } from "@mui/icons-material";
 
 const Background = styled(Box)({
   backgroundImage: `url('https://images.unsplash.com/photo-1720931623686-588ef1014e2a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
@@ -81,7 +82,7 @@ const Contact = () => {
                  // textTransform: "uppercase",
                 }}
               >
-                In Hurry?
+                Get in Touch with us
               </Typography>
               <Typography
                 variant="p"
@@ -104,6 +105,12 @@ const Contact = () => {
               <InfoRow>
                 <MailOutlineIcon />
                 <Typography variant="body1" color="text.secondary" sx={{ color: "#e0e0e0" }}>
+                info@princeworldexim.com
+                </Typography>
+              </InfoRow>
+              <InfoRow>
+                <Person2Rounded />
+                <Typography variant="body1" color="text.secondary" sx={{ color: "#e0e0e0" }}>
                 ramsagarsharma1985@gmail.com
                 </Typography>
               </InfoRow>
@@ -116,8 +123,8 @@ const Contact = () => {
               <InfoRow>
                 <LocationOnIcon />
                 <Typography variant="body1" color="text.secondary" sx={{ color: "#e0e0e0" }}>
-                  Shop No. 3, Plot No. 23, Sai Akash, Sector 18, Ulwe, Navi Mumbai 410206
-                </Typography>
+                  Office No. 303, Mayuresh Cosmos, Plot No. 37, Sector -11, CBD Belapuer, Navi Mumbai - 400614
+                    </Typography>
               </InfoRow>
             </GlassCard>
           </Grid>

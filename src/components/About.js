@@ -53,36 +53,17 @@ const About = () => {
     },
   ];
 
-  const teamData = [
-    {
-      id: 1,
-      name: 'Anurag Shukla',
-      role: 'Chief Executive Officer',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0FpBg5Myb9CQ-bQpFou9BY9JXoRG6208_Q&s',
-    },
-    {
-      id: 2,
-      name: 'Vilas K',
-      role: 'Head of Logistics and Shipping',
-      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxpxpz-RYLeitDMP46KejfI30FGSEpfrBwag&s',
-    },
-    {
-      id: 3,
-      name: 'Mike Johnson',
-      role: 'Global Trade Analyst',
-      image: 'https://d22e6o9mp4t2lx.cloudfront.net/cms/pfp3_d7855f9562.webp',
-    },
-  ];
+
 
   return (
     <>
       {/* Hero Section */}
       <Background>
         <SectionTitle style={{color:'white'}}>
-          Why Choose Global Prince World?
+          Why Choose Prince World Exim?
         </SectionTitle>
         <Typography sx={{ textAlign: 'center', fontSize: '1.2rem', maxWidth: '800px', marginBottom: '30px',color:'white' }}>
-          We bridge the gap between international markets, offering seamless import and export solutions that ensure timely delivery, cost-efficiency, and high-quality service.
+          We bridge the gap between international markets, offering seamless export solutions that ensure timely delivery, cost-efficiency, and high-quality service.
         </Typography>
         {/* <Typography variant="contained" sx={{  color: 'black', fontWeight: 'bold', borderRadius: '30px', padding: '10px 30px' }}>
           Get Started

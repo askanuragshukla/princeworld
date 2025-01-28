@@ -28,7 +28,7 @@ const App = () => {
       case 'Contact':
         return <Contact />;
       default:
-        return <Home />;
+        return <Home setActivePage={setActivePage} />;
     }
   };
 
