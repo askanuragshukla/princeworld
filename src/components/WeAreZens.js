@@ -20,7 +20,7 @@ const WeAreZens = ({setActivePage}) => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'flex-start',
           flexDirection: { xs: 'column', sm: 'row' },
         }}
@@ -35,10 +35,10 @@ const WeAreZens = ({setActivePage}) => {
             textAlign: { xs: 'center', sm: 'left' },
           }}
         >
-          Meet Our
+          Meet Our CEO
         </Typography>
 
-        <Typography
+        {/* <Typography
           variant="h1"
           sx={{
             fontSize: { xs: '40px', sm: '60px', md: '120px' },
@@ -49,7 +49,7 @@ const WeAreZens = ({setActivePage}) => {
           }}
         >
           CEO
-        </Typography>
+        </Typography> */}
       </Box>
 
       {/* Middle Section */}

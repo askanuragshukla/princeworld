@@ -17,6 +17,8 @@ import makhanaswtdryf from './images/dryfrtmixmakh.jpg'
 import makhanapowder from './images/phool-makhana-powder.jpg'
 import makhanaraw from './images/lotuspop.webp'
 import makhanaflav from './images/Makhana-4-Flavours.webp'
+import cornraw from './images/multicolorcorn_500x500.jpg'
+import furnitures from './images/furnitures.jpg'
 const Products = () => {
   
 const Background = styled(Box)({
@@ -94,7 +96,7 @@ const SectionTitle = styled(Typography)({
           fontSize: "2.5rem",
         }}
       >
-        Makhana / Fox nuts.
+        Makhana / Fox nuts
       </Typography>
       <Typography
         variant="h6"
@@ -395,7 +397,7 @@ const SectionTitle = styled(Typography)({
           },
         }}
       >
-        Walnuts.
+        Walnuts
       </Typography>
       
       <Typography
@@ -561,7 +563,14 @@ const servicesData = [
     id: 6,
     title: 'Corn',
     description: 'As Better As Mexicao',
-    image: 'https://www.farmersstop.com/cdn/shop/products/multicolorcorn_500x500.jpg?v=1710228786',
+    image: cornraw,
+    icon: <GrainIcon />,
+  },
+  {
+    id: 7,
+    title: 'Furnitures',
+    description: 'We export custom made furnitures including Sofas and Tables with high grade woods and quality and precision work.',
+    image:furnitures,
     icon: <GrainIcon />,
   },
 ];
