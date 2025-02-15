@@ -10,6 +10,10 @@ import ricehdimages from './images/white-rice-in-sack-ai-generated-photo.jpg'
 import cornhdimages from './images/cornhdlg.jpg'
 import walnuthdimages from './images/walnutlghd.png'
 import spicehdimages from './images/spiceshdlg.jpg'
+import flvrmkhana from './images/flvrmkhanahdwlpr.jpg'
+import lotusmkhana from './images/makhanahdimahewlpr.jpg'
+import mkhana2 from './images/makahnahdwlpr2.jpg'
+
 
 
 
@@ -45,8 +49,16 @@ export default function Hero() {
 
   const content = [
     {
+      text: "Indulge in the rich taste of Flavored Makhana, sourced with the finest quality.",
+      backgroundImage: flvrmkhana,
+    },
+    {
+      text: "Supplying premium Makhana to markets worldwide, ensuring taste and nutrition.",
+      backgroundImage: lotusmkhana,
+    },
+    {
       text: "We Export the finest Makhana, Rice, Walnuts, and Corns from around the world.",
-      backgroundImage: ricehdimages,
+      backgroundImage: spicehdimages,
     },
     {
       text: "Delivering premium quality Rice and Corns to our customers globally.",
@@ -54,12 +66,13 @@ export default function Hero() {
     },
     {
       text: "Your trusted partner in Exporting Corns, Spices and other premium commodities.",
-      backgroundImage: spicehdimages,
+      backgroundImage: ricehdimages,
     },
     {
       text: "We also Export Spices, Lentils and much more .",
       backgroundImage: walnuthdimages,
     },
+   
   ];
 
   React.useEffect(() => {

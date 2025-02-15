@@ -19,10 +19,15 @@ import makhanaraw from './images/lotuspop.webp'
 import makhanaflav from './images/Makhana-4-Flavours.webp'
 import cornraw from './images/multicolorcorn_500x500.jpg'
 import furnitures from './images/furnitures.jpg'
+import flvrmkhana from './images/flvrmkhanahdwlpr.jpg'
+import lotusmkhana from './images/makhanahdimahewlpr.jpg'
+import mkhana2 from './images/makahnahdwlpr2.jpg'
+
+
 const Products = () => {
   
 const Background = styled(Box)({
-  backgroundImage: `url('https://i.pinimg.com/originals/33/97/45/33974528aafacff2a8180c581068c877.jpg')`,
+  backgroundImage: `url(${flvrmkhana})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",

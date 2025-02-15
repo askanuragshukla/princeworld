@@ -23,7 +23,7 @@ const Navbar = ({ activePage, setActivePage }) => {
     setDrawerOpen(open);
   };
 
-  const navLinks = ['Home', 'About', 'Contact', 'Products', 'Blog'];
+  const navLinks = ['Home', 'About','Products', 'Contact'];
 
   return (
     <AppBar position="static" style={{ background: '#4A2C2C', padding: '0.5rem 1rem' }}>

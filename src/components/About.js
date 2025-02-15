@@ -4,9 +4,13 @@ import { styled } from '@mui/system';
 import BusinessIcon from '@mui/icons-material/Business';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import BuildIcon from '@mui/icons-material/Build';
+import flvrmkhana from './images/flvrmkhanahdwlpr.jpg'
+import WhyChooseUs from './WhyChooseUs';
+import lotusmkhana from './images/makhanahdimahewlpr.jpg'
+import mkhana2 from './images/makahnahdwlpr2.jpg'
 
 const Background = styled(Box)({
-  backgroundImage: `url('https://images.unsplash.com/photo-1720931623686-588ef1014e2a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+  backgroundImage: `url(${mkhana2})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -57,8 +61,9 @@ const About = () => {
 
   return (
     <>
-      {/* Hero Section */}
-      <Background>
+    <Box sx={{width:'100%',marginRight:0,marginLeft:0}}>
+       {/* Hero Section */}
+       <Background>
         <SectionTitle style={{color:'white'}}>
           Why Choose Prince World Exim?
         </SectionTitle>
@@ -69,16 +74,27 @@ const About = () => {
           Get Started
         </Typography> */}
       </Background>
+    
 
       {/* Why Choose Us Section */}
      
 
       {/* RSS Consultancy Section */}
-      <Container sx={{ paddingY: '50px' }}>
+      <Container sx={{ paddingY: '50px',width:'100%' }}>
         <SectionTitle>Why Choose Us?</SectionTitle>
         <Typography variant="body1" sx={{ textAlign: 'center', marginBottom: '30px', color: 'text.secondary' }}>
           Expertise, creativity, and quality define our approach. Discover how we bring your visions to life with innovative solutions.
         </Typography>
+        <WhyChooseUs />
+       
+        
+       
+        
+      </Container>
+
+      {/* RSS Consultancy Section */}
+      <Container sx={{ paddingBottom: '50px' }}>
+        <SectionTitle>Our Expertise</SectionTitle>
         <Grid container spacing={4}>
           {cardData.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
@@ -93,7 +109,7 @@ const About = () => {
                   '&:hover': { transform: 'scale(1.05)', boxShadow: '0px 8px 16px rgba(0, 0, 0, 0.2)' },
                 }}
               >
-                <Box sx={{ marginBottom: '10px', color: 'primary.main' }}>{item.icon}</Box>
+                <Box sx={{ marginBottom: '10px', color: '#4A2C2C' }}>{item.icon}</Box>
                 <Typography variant="h6" sx={{ textAlign: 'center', fontWeight: 'bold' }}>
                   {item.text}
                 </Typography>
@@ -101,12 +117,8 @@ const About = () => {
             </Grid>
           ))}
         </Grid>
-      </Container>
 
-      {/* RSS Consultancy Section */}
-      <Container sx={{ paddingBottom: '50px' }}>
-        <SectionTitle>Our Expertise</SectionTitle>
-        <Typography style={{alignItems:'center',textAlign:'center',fontWeight:'bold'}} variant='h4'>RSS Consultancy</Typography>
+        <Typography style={{marginTop:80,alignItems:'center',textAlign:'center',fontWeight:'bold'}} variant='h4'>RSS Consultancy</Typography>
         <Divider sx={{ marginBottom: '20px' }} />
         <Typography variant="body1" sx={{ textAlign: 'center', color: 'text.secondary', marginBottom: '30px' }}>
           We specialize in civil contracts, interior design, and high-quality furniture and hardware solutions, ensuring every project is completed with excellence.
@@ -155,6 +167,8 @@ const About = () => {
           ))}
         </Grid>
       </Container> */}
+    </Box>
+     
     </>
   );
 };
