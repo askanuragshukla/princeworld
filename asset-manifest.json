@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/princeworld/static/css/main.ba9bad04.css",
-    "main.js": "/princeworld/static/js/main.fa94b35f.js",
+    "main.js": "/princeworld/static/js/main.1d2e4226.js",
     "static/js/488.2c8f348d.chunk.js": "/princeworld/static/js/488.2c8f348d.chunk.js",
     "static/media/walnutlghd.png": "/princeworld/static/media/walnutlghd.119d2c8e7d90b47428fd.png",
     "static/media/akhamasoor.png": "/princeworld/static/media/akhamasoor.e4e0a78495bce20e18cc.png",
@@ -20,6 +20,7 @@
     "static/media/dals.jpg": "/princeworld/static/media/dals.feeeb389ba8936db8449.jpg",
     "static/media/istockphoto-477756915-612x612.jpg": "/princeworld/static/media/istockphoto-477756915-612x612.d6f96d83a4af716a9d10.jpg",
     "static/media/sm1.jpeg": "/princeworld/static/media/sm1.008506d78182c0e56dd3.jpeg",
+    "static/media/flvrmkhanahdwlpr.jpg": "/princeworld/static/media/flvrmkhanahdwlpr.7cda39e72bcfff446abd.jpg",
     "static/media/lotuspop.webp": "/princeworld/static/media/lotuspop.941358f4fa837f178fbd.webp",
     "static/media/Ram sagar bhai.jpg": "/princeworld/static/media/Ram sagar bhai.a879bf9c0eb40dc8daee.jpg",
     "static/media/Makhana-Namkeen-2-3.jpg": "/princeworld/static/media/Makhana-Namkeen-2-3.ce399ca59da954ac7985.jpg",
@@ -27,7 +28,9 @@
     "static/media/rice.webp": "/princeworld/static/media/rice.13e45522d9e841c7ec65.webp",
     "static/media/Makhana-4-Flavours.webp": "/princeworld/static/media/Makhana-4-Flavours.bd049d062b9b60ee5a6c.webp",
     "static/media/Civil-Contracts.webp": "/princeworld/static/media/Civil-Contracts.078b337105471dadaa42.webp",
+    "static/media/makhanahdimahewlpr.jpg": "/princeworld/static/media/makhanahdimahewlpr.d609c0a3acfd3cc63257.jpg",
     "static/media/multicolorcorn_500x500.jpg": "/princeworld/static/media/multicolorcorn_500x500.cad12ddce8df6945a226.jpg",
+    "static/media/makahnahdwlpr2.jpg": "/princeworld/static/media/makahnahdwlpr2.91fc618f4964956de02b.jpg",
     "static/media/makhanahd.avif": "/princeworld/static/media/makhanahd.fd33f235cc9c8edb68ea.avif",
     "static/media/chawalbr.jpg": "/princeworld/static/media/chawalbr.2052ce8b4821473fa556.jpg",
     "static/media/dryfrtmixmakh.jpg": "/princeworld/static/media/dryfrtmixmakh.827751cb6f92e2329fe5.jpg",
@@ -37,11 +40,11 @@
     "static/media/slick.woff": "/princeworld/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/princeworld/index.html",
     "main.ba9bad04.css.map": "/princeworld/static/css/main.ba9bad04.css.map",
-    "main.fa94b35f.js.map": "/princeworld/static/js/main.fa94b35f.js.map",
+    "main.1d2e4226.js.map": "/princeworld/static/js/main.1d2e4226.js.map",
     "488.2c8f348d.chunk.js.map": "/princeworld/static/js/488.2c8f348d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba9bad04.css",
-    "static/js/main.fa94b35f.js"
+    "static/js/main.1d2e4226.js"
   ]
 }
