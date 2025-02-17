@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
   Container,
   Typography,
@@ -14,6 +14,8 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { MailLock, MailOutline, Person2Rounded } from "@mui/icons-material";
+import emailjs from "@emailjs/browser";
+
 
 const Background = styled(Box)({
   backgroundImage: `url('https://images.unsplash.com/photo-1720931623686-588ef1014e2a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
@@ -64,7 +66,56 @@ const InfoRow = styled(Box)({
   },
 });
 
+
+
 const Contact = () => {
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "your_service_id", // Replace with your EmailJS Service ID
+        "your_template_id", // Replace with your EmailJS Template ID
+        {
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "your_public_key" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          alert("Message sent successfully!");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error("Failed to send message:", error);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+  };
+
+  
   return (
     <Background>
       <Container maxWidth="lg">
@@ -151,6 +202,9 @@ const Contact = () => {
                       fullWidth
                       label="First Name"
                       variant="outlined"
+                      name="firstName"
+                      onChange={handleChange}
+                      value={formData.firstName}
                       required
                       sx={{
                         "& .MuiOutlinedInput-root": {
@@ -174,6 +228,10 @@ const Contact = () => {
                       fullWidth
                       label="Last Name"
                       variant="outlined"
+                      name="lastName"
+                      value={formData.lastName}
+
+                      onChange={handleChange}
                       required
                       sx={{
                         "& .MuiOutlinedInput-root": {
@@ -198,6 +256,10 @@ const Contact = () => {
                       label="Email Address"
                       type="email"
                       variant="outlined"
+                      name="email"
+                      value={formData.email}
+
+                      onChange={handleChange}
                       required
                       sx={{
                         "& .MuiOutlinedInput-root": {
@@ -220,6 +282,9 @@ const Contact = () => {
                     <TextField
                       fullWidth
                       label="Subject"
+                      name="subject"
+                      value={formData.subject}
+                      onChange={handleChange}
                       variant="outlined"
                       sx={{
                         "& .MuiOutlinedInput-root": {
@@ -244,6 +309,9 @@ const Contact = () => {
                       label="Message"
                       multiline
                       rows={4}
+                      name="message"
+                      onChange={handleChange}
+                      value={formData.message}
                       variant="outlined"
                       required
                       sx={{

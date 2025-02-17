@@ -13,7 +13,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-
+import PWELogo from "./images/PWELogo.png"
+import { Avatar } from '@mui/material';
 const Navbar = ({ activePage, setActivePage }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
@@ -37,13 +38,13 @@ const Navbar = ({ activePage, setActivePage }) => {
           <Box display="flex" alignItems="center" style={{ marginRight: '1rem' }}>
             <EmailIcon style={{ fontSize: '1rem', marginRight: '5px' }} />
             <Typography variant="body2" style={{ fontSize: '0.9rem', }}>
-              ramsagarsharma1985@gmail.com
+            Info@princeworldexim.com
             </Typography>
           </Box>
           <Box display="flex" alignItems="center">
             <PhoneIcon style={{ fontSize: '1rem', marginRight: '5px' }} />
             <Typography variant="body2" style={{ fontSize: '0.9rem' }}>
-              +91 9920580308 | 7039712825
+               022 48027101 | +91 9920580308 
             </Typography>
           </Box>
         </Box>
@@ -54,6 +55,9 @@ const Navbar = ({ activePage, setActivePage }) => {
         {/* Logo */}
         
         <Box display="flex" alignItems="center">
+        <IconButton  sx={{ p: 0 ,marginRight:2}}>
+                <Avatar alt="Remy Sharp" src={PWELogo} />
+              </IconButton>
           <Typography variant="h6" component="div" style={{ fontWeight: 'bold' }}>
             Prince World Exim
           </Typography>
