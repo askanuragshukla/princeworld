@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/princeworld/static/css/main.ba9bad04.css",
-    "main.js": "/princeworld/static/js/main.1d2e4226.js",
+    "main.js": "/princeworld/static/js/main.3600fb6c.js",
     "static/js/488.2c8f348d.chunk.js": "/princeworld/static/js/488.2c8f348d.chunk.js",
     "static/media/walnutlghd.png": "/princeworld/static/media/walnutlghd.119d2c8e7d90b47428fd.png",
+    "static/media/PWELogo.png": "/princeworld/static/media/PWELogo.f20251a794dad549b303.png",
     "static/media/akhamasoor.png": "/princeworld/static/media/akhamasoor.e4e0a78495bce20e18cc.png",
     "static/media/dimagginuts.jpg": "/princeworld/static/media/dimagginuts.2ff988e4bf24ed4950e2.jpg",
     "static/media/phool-makhana-powder.jpg": "/princeworld/static/media/phool-makhana-powder.bcb548a1672868adac11.jpg",
@@ -40,11 +41,11 @@
     "static/media/slick.woff": "/princeworld/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/princeworld/index.html",
     "main.ba9bad04.css.map": "/princeworld/static/css/main.ba9bad04.css.map",
-    "main.1d2e4226.js.map": "/princeworld/static/js/main.1d2e4226.js.map",
+    "main.3600fb6c.js.map": "/princeworld/static/js/main.3600fb6c.js.map",
     "488.2c8f348d.chunk.js.map": "/princeworld/static/js/488.2c8f348d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba9bad04.css",
-    "static/js/main.1d2e4226.js"
+    "static/js/main.3600fb6c.js"
   ]
 }
